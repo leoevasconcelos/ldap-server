@@ -1,0 +1,12 @@
+
+dn: ou=USUARIOS, o=banestes
+passwordMinimumLength: 8
+loginGraceRemaining: 5
+ou: USUARIOS
+passwordRequired: TRUE
+passwordAllowChange: TRUE
+objectClass: organizationalUnit
+objectClass: Top
+loginGraceLimit: 5
+passwordUniqueRequired: TRUE
+passwordExpirationInterval: 2592000
