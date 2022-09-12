@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+   name: ldap-server
+   labels:
+    app: ldap-server
+    selector: ldap-server
+spec:
+   ports:
+   - name: ldap
+     protocol: TCP 
+     port: 10389
+     targetPort: 10389
+   - name: ldaps
+     protocol: TCP
+     port: 10636
+     targetPort: 10636
+   selector:
+     app: ldap-server

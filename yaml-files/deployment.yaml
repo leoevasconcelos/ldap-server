@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ldap-server
+  labels:
+    app: ldap-server
+spec:
+  selector:
+    matchLabels:
+      app: ldap-server
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ldap-server
+    spec:
+      containers:
+        - name: java-ldap-image
+          image: quay.io/rhn_support_omelo/java-ldap-server
+          ports:
+            - name: ldaps
+              containerPort: 10636
+            - name: ldap
+              containerPort: 10389
