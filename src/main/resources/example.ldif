@@ -35,10 +35,10 @@ objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-uid: omelo
-cn: Osvaldo
-sn: Melo
-mail: omelo@keycloak.org
+uid: leonardo
+cn: Leonardo
+sn: Vasconcelos
+mail: leoevasconcelos@keycloak.org
 postalCode: 88441
 userPassword: password
 
