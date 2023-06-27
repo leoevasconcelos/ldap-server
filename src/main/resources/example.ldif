@@ -18,15 +18,15 @@ objectclass: top
 objectclass: organizationalUnit
 ou: AppRoles
 
-dn: uid=jbrown,ou=People,dc=example,dc=org
+dn: uid=omelo,ou=People,dc=example,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-uid: jbrown
-cn: James
-sn: Brown
-mail: jbrown@keycloak.org
+uid: omelo
+cn: Osvaldo
+sn: Melo
+mail: omelo@keycloak.org
 postalCode: 88441
 userPassword: password
 
@@ -38,7 +38,7 @@ objectclass: inetOrgPerson
 uid: leonardo
 cn: Leonardo
 sn: Vasconcelos
-mail: leoevasconcelos@keycloak.org
+mail: leribeir@redhat.com
 postalCode: 88441
 userPassword: password
 
